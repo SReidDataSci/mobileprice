@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 app = Flask(__name__)
 
-url = "https://raw.githubusercontent.com/SReidDataSci/mobileprice/main/data/train.csv"
+url = "https://raw.githubusercontent.com/SReidDataSci/mobileprice/refs/heads/main/data/train.csv"
 dataframe = pd.read_csv(url)
 
 X = dataframe.iloc[:, :-1].values
