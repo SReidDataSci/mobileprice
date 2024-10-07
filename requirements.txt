@@ -4,3 +4,4 @@ pandas==1.4.3
 scikit-learn==1.0.2
 waitress==3.0.0
 werkzeug==2.2.2
+flask_cors==3.0.10
