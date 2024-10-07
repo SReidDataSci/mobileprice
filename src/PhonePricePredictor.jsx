@@ -34,7 +34,7 @@ const PhonePricePredictor = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://mobileprice-production.up.railway.app', formData);
+      const response = await axios.post('https://mobileprice-production.up.railway.app/predict', formData);
       setPrediction(response.data.price_range);
     } catch (error) {
       console.error('Error making prediction', error);
