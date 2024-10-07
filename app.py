@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
 app = Flask(__name__)
+CORS(app)  
 
 url = "https://raw.githubusercontent.com/SReidDataSci/mobileprice/refs/heads/main/data/train.csv"
 dataframe = pd.read_csv(url)
