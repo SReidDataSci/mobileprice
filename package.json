@@ -1,6 +1,6 @@
 {
   "name": "mobileprice",
-  "homepage": "https://github.com/SReidDataSci/mobileprice",
+  "homepage": "https://sreiddatasci.github.io/mobileprice/",
   "version": "1.0.0",
   "description": "Idea here is to create a mock ML model that can classify mobile devices based on features.",
   "main": "index.js",
