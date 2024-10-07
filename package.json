@@ -1,9 +1,4 @@
 {
-  "dependencies": {
-    "axios": "^1.7.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
   "name": "mobileprice",
   "version": "1.0.0",
   "description": "Idea here is to create a mock ML model that can classify mobile devices based on features.",
@@ -16,8 +11,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
     "react-scripts": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -30,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://mobileprice-production.up.railway.app"
 }
