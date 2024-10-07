@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 app = Flask(__name__)
 # Allow all origins and all methods
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://sreiddatasci.github.io/portfolio/"]}}, supports_credentials=True)
 
 url = "https://raw.githubusercontent.com/SReidDataSci/mobileprice/refs/heads/main/data/train.csv"
 dataframe = pd.read_csv(url)
@@ -20,7 +20,7 @@ clf.fit(X, Y)
 @app.route('/predict', methods=['POST', 'OPTIONS'])
 def predict():
     if request.method == 'OPTIONS':
-        return '', 204
+        return '', 200
     
     # Get the phone data from the request
     data = request.json
