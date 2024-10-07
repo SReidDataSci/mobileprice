@@ -28,7 +28,7 @@ def predict():
     # Example: ['battery_power', 'blue', 'clock_speed', etc...]
     features = [data['battery_power'], data['blue'], data['clock_speed'], data['dual_sim'],
                 data['fc'], data['four_g'], data['int_memory'], data['m_dep'], data['mobile_wt'], 
-                data['n_cores'], data['px_height'], data['px_width'], data['ram'], data['sc_h'], 
+                data['n_cores'], data['pc'], data['px_height'], data['px_width'], data['ram'], data['sc_h'], 
                 data['sc_w'], data['talk_time'], data['three_g'], data['touch_screen'], data['wifi']]
     
     # Reshape the input for prediction

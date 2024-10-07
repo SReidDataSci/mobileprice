@@ -15,6 +15,7 @@ const PhonePricePredictor = () => {
     n_cores: '',
     px_height: '',
     px_width: '',
+    pc: '',
     ram: '',
     sc_h: '',
     sc_w: '',
@@ -40,22 +41,6 @@ const PhonePricePredictor = () => {
     }
   };
 
-const backendUrl = "https://mobileprice-production.up.railway.app";
-
-fetch(backendUrl, {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(phoneData),
-})
-.then(response => response.json())
-.then(data => {
-    console.log('Prediction:', data);
-})
-.catch(error => {
-    console.error('Error:', error);
-});
 
   return (
     <div>
